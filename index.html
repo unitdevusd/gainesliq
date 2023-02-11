@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gaines Liquors</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<style>
+  body, html {height: 100%}
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+  .menu {display: none}
+  .bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("liqpic.jpg");
+    min-height: 90%;
+  }
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 10am to 10pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <!-- <span class="w3-text-white w3-hide-small" style="font-size:100px">thin<br>CRUST PIZZA</span> -->
+    <!-- <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>thin<br>CRUST PIZZA</b></span> -->
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the drinks!</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo bord" style="margin-bottom:64px">THE DRINKS</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey bord">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Hard Liquor</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Soft Liquor</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Grocery</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Grey Goose</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$30.99</span></h1>
+      <p class="w3-text-grey">distilled in the gastronomy capital of the world, France, using the traditions of the Maître de Chai with only two ingredients – single-origin Picardie winter wheat and natural spring water.</p>
+      <hr>
+   
+      <h1><b>Tanqueray London Dry</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$24.99</span></h1>
+      <p class="w3-text-grey">a juniper-forward gin with distinctive flavours of piney juniper and feint lemon zest. It is these perfectly balanced botanicals of juniper, coriander, angelica and liquorice which create a classic base for every gin cocktail without overpowering it.</p>
+      <hr>
+      
+      <h1><b>Don Julio Reposado</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$59.99</span></h1>
+      <p class="w3-text-grey">the base from which all of our other variants are derived. Commonly referred to as “silver” tequila, its crisp agave flavor and hints of citrus make it an essential component to a variety of innovative drinks including margaritas. It can also be enjoyed neat or on the rocks.</p>
+      <hr>
+
+      <h1><b>Fireball Cinnamon Whisky</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.99</span></h1>
+      <p class="w3-text-grey">a mixture of Canadian whisky, cinnamon flavoring and sweeteners that is produced by the Sazerac Company. Its foundation is Canadian whisky, and the taste otherwise resembles the candy with a similar name, Ferrara Candy Company's "Atomic Fireball" candy.</p>
+      <hr>
+
+      <h1><b>Philbert Rare Cask Sherry Finish</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$56.99</span></h1>
+      <p class="w3-text-grey">The floral notes is what dominates with an orange bloom and jasmine bouquet, and a marzipan cake finish. Tastes of banana and fresh raisins and light ginger spices. Light tobacco notes that ends to a citrus and pineapple like finish. Smooth and complex.</p>
+      <hr>
+
+      <h1><b>Bacardi Rum</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$12.99</span></h1>
+      <p class="w3-text-grey">the original 'light white' rum, first made in 1862 by Don Facundo Bacardi Massó. It is a blend of heavy-bodied and drier light-bodied rums aged separately in lightly charred ex-bourbon casks for 12 to 24 months. These rums are charcoal filtrated and blended.</p>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
+      <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
+      <hr>
+   
+      <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
+      <p class="w3-text-grey">Ravioli filled with cheese</p>
+      <hr>
+      
+      <h1><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
+      <hr>
+
+      <h1><b>Seafood pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+      <p class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">Ask the waiter</p>
+      <hr>
+   
+      <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+      <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+      <hr>
+      
+      <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+      <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+      <hr>
+      
+      <h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+      <p class="w3-text-grey">Tomatoes and mozzarella</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="marg">
+  <div class="w3-content">
+    <h1 class="w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p class="w3-xxlarge"><strong>Gaines Liquors</strong> is Stockton's first choice for convenience, here to provide you with the most affordable and highest quality of alcohols. Any stop at Gaines Liquor is a quick stop. Come by and see how fast we are at giving our customers what they need.
+    </p>
+    <img src="gl.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <img src="restaurant.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-large">
+      <div class="w3-row">
+        <div class="w3-col s6">
+          <p>Monday 10am - 10pm</p>
+          <p>Tuesday 10am - 10pm</p>
+          <p>Wednesday 10am - 10pm</p>
+        </div>
+        <div class="w3-col s6">
+          <p>Thursday 10am - 10pm</p>
+          <p>Friday 10am - 10pm</p>
+          <p>Weekends 10am - 10pm</p>
+        </div>
+      </div>      
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<a href="https://goo.gl/maps/8YLobZMXaYy41vK39">
+  <img src="map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+</a>
+
+<!-- Contact -->
+  <div class="contact">
+    <div class="w3-content">
+      <br><br><br>
+      <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+      <!-- <p>We are on the corner of Alpine and Inman Ave near I-5. Find us at 2211 W Alpine Ave Stockton, CA 95204 or call us at (209) 464-5069</p> -->
+      <!-- <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p> -->
+      <p class="w3-xxlarge"> Find us at 2211 W Alpine Ave Stockton, CA 95204 <br> On the corner of Alpine and Inman Ave near I-5 <br> call us at (209) 464-5069 <br> or just send us a message:</p>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+        <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+        <br><br><br>
+      </form>
+    </div>
+  </div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <div class="footer-col">
+    <p><strong>2006–2023 Gaines Liquor LLC</strong></p>
+  </div>
+  <!-- <p>Powered by <a href="https://www.usdapps.tech" title="W3.CSS" target="_blank" class="w3-hover-text-green">USD Apps</a></p> -->
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
