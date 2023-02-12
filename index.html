@@ -23,10 +23,19 @@
       min-height: 90%;
       width:100%;
       display: flex;
-      @media (orientation: landscape) {
+  }
+  @media (orientation: landscape) {
         body {
           background-image: url("liqpic.jpg");
           flex-direction: row;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: center center;
+          min-height: 90%;
+          width:100%;
         }
       }
 
@@ -34,10 +43,16 @@
         body {
           background-image: url("slickliqpic.jpg");
           flex-direction: column;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: center center;
+          min-height: 90%;
+          width:100%;
+        }
       }
-    }
-
-  }
 
   /* @media (max-width: 96px) {
           body {
